@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("./imagens/img-fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Matemasie", sans-serif;
+    font-style: normal;
+}
+
+main {
+    /*border: 1px solid red;*/
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100%;
+}
+
+.container-gravacao {
+    /*border: 1px solid blue;*/
+    background-color: rgba(255, 255, 255, 0.37);
+    color: #e6ae6a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 45px;
+    padding: 10px;
+}
+
+#info {
+    color: #000000;
+    border-radius: 15px;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: larger;
+}
+
+#gravar,
+#parar {
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+#gravar {
+    background-color: #ebbe66;
+}
+
+#gravar:hover {
+    cursor: pointer;
+    background-color: #F2D6B3;
+    color: rgb(155, 155, 154);
+}
+
+#parar {
+    background-color: #038C7F;
+}
+
+#parar:hover {
+    cursor: pointer;
+    background-color: #6FBFBF;
+    color: rgb(155, 155, 154);
+}
+
+.container-cards {
+    /*border: 1px solid green;*/
+    display: flex;
+    flex-wrap: wrap; /*quebra linha*/
+    gap: 10px;
+    padding: 25px;
+    overflow-y: auto; /*cria um scroll automatico*/
+}
+
+.card {
+    background-color: rgba(63, 62, 62, 0.308);
+    color: black;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border: 10px;
+
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 25px;
+    color: #000000;
+}
+
+.bt-card {
+    text-align: end;
+}
+
+#editar,
+#excluir {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(49, 49, 49, 0.932);
+    border: none;
+    border-radius: 50%;
+}
