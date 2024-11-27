@@ -15,10 +15,10 @@ if (!SpeechRecognition) {
     recognition.continuous = true;
 
     const btngravar = document.getElementById("gravar");
-    let anotacao = " ";
+
 
     btngravar.addEventListener("click", () => {
-        anotacao = " ";
+        reconhecimentoCompleto = " ";
         recognition.start();
         console.log('gravando');
     })
@@ -114,4 +114,3 @@ if (!SpeechRecognition) {
     }
     window.onload = gerarCards;
 }
-
